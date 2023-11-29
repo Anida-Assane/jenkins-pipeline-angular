@@ -1,0 +1,26 @@
+
+<div class="card" style="width: 18rem;" >
+  <a routerLink="/details/{{id}}" class="lien">
+    <img [src]="image" alt="image" class="image" >
+    <div class="card-body">
+      <h5 class="card-title" [ngStyle]="{color:onColor()}">{{title | uppercase}}</h5>
+      <h6>{{prix}} £</h6>
+      <span *ngIf="disponible === false">- Indisponible</span>
+      <span *ngIf="disponible === true" >- Disponible</span>
+      <p class="card-text">{{description}}</p>
+      <a class="btn btn-primary" target="_blank" (click)="onlike()" [ngClass]="{
+   'active': jaime==true,
+   'hidden': jaime==false
+   }">J'aimes</a>
+      <a class="btn btn-danger" target="_blank" (click)="onlike()" [ngClass]="{
+   'hidden': jaime==true,
+   'active': jaime==false
+
+   }">J'aimes pas</a>
+      <br> nombre de j'aimes: {{variable}}
+      <input type ="text" placeholder="Ton commentaire" [(ngModel)]="commentaire"/>
+      <p>Commentaire : {{commentaire}}</p>
+    </div>
+  </a>
+
+</div>

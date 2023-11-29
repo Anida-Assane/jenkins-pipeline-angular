@@ -1,0 +1,18 @@
+
+<div class="container">
+  <h1 class="mt-3 mb-3 titre">Liste Articles</h1>
+
+  <div class="divregroupe">
+    <app-article
+      *ngFor="let element of liste"
+      [title]="element.titre"
+      [prix]="element.prix"
+      [description]="element.description"
+      [disponible]="element.disponibilite"
+      [image]="element.image"
+      [id]="element.id"
+    > </app-article>
+  </div>
+
+</div>
+

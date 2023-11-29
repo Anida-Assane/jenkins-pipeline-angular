@@ -1,0 +1,8 @@
+.titre{
+  color:red !important;
+}
+.divregroupe{
+  display: flex;
+  gap:20px;
+  flex-wrap: wrap;
+}

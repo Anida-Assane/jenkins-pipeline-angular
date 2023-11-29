@@ -1,0 +1,17 @@
+.titre{
+  color:red !important;
+}
+.image{
+  width: 200px;
+  height: 200px;
+}
+.active{
+  display: block;
+}
+.hidden{
+  display: none;
+}
+.lien{
+  color:#000;
+  text-decoration: none;
+}
